@@ -1,0 +1,40 @@
+<UserControl x:Class="produKtiviti.Views.FeaturesPage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             Background="{DynamicResource BackgroundBrush}">
+
+    <ScrollViewer VerticalScrollBarVisibility="Auto"
+                  HorizontalScrollBarVisibility="Disabled">
+        <StackPanel Margin="40,40,40,40">
+
+            <!-- Favorites section -->
+            <TextBlock Text="Favorites"
+                       Foreground="{DynamicResource TextPrimaryBrush}"
+                       FontSize="22"
+                       FontWeight="Light"
+                       Margin="0,0,0,12"/>
+
+            <WrapPanel x:Name="FavoritesTilePanel"
+                       Orientation="Horizontal"
+                       Margin="0,0,0,8"/>
+
+            <TextBlock x:Name="NoFavoritesHint"
+                       Text="Star a feature to add it here."
+                       Foreground="{DynamicResource TextSecondaryBrush}"
+                       FontSize="12"
+                       Margin="0,0,0,32"
+                       Visibility="Visible"/>
+
+            <!-- Features section -->
+            <TextBlock Text="Features"
+                       Foreground="{DynamicResource TextPrimaryBrush}"
+                       FontSize="22"
+                       FontWeight="Light"
+                       Margin="0,0,0,12"/>
+
+            <WrapPanel x:Name="TilePanel"
+                       Orientation="Horizontal"/>
+
+        </StackPanel>
+    </ScrollViewer>
+</UserControl>
