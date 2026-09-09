@@ -78,6 +78,10 @@
                             Content="Features"
                             Style="{StaticResource NavButtonActiveStyle}"
                             Click="NavFeatures_Click"/>
+                    <Button x:Name="NavQuickSoftware"
+                            Content="Quick Software"
+                            Style="{StaticResource NavButtonStyle}"
+                            Click="NavQuickSoftware_Click"/>
                 </StackPanel>
 
                 <!-- Settings pinned to bottom -->
